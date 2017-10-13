@@ -30,6 +30,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    ofBackground(62,74,137);
     ofNoFill();
     ofBeginShape();
     for(auto v: outerTriangle){
@@ -40,6 +41,7 @@ void ofApp::draw(){
     for(int i = 0; i < current_points; i++){
         // Pick up Point
         Point_2 p(sites[i].x(), sites[i].y());
+        ofSetColor(253,231,37);
         ofDrawEllipse(p.x(), p.y(), 5, 5);
         
         // Get Voronoi locate result for p
@@ -66,6 +68,7 @@ void ofApp::draw(){
                     double vyt = ec->target()->point().y();
                     
                     // Draw
+                    ofSetColor(52,183,121);
                     ofDrawLine(ofPoint(vxs, vys), ofPoint(vxt, vyt));
                 }
             }
@@ -79,12 +82,15 @@ void ofApp::draw(){
     
     
     if (ofGetMousePressed(OF_MOUSE_BUTTON_LEFT)) {  // If the left mouse button is pressed...
+        
+        // modify the voronoi tessellation
         current_points++;
         float siteX = ofGetMouseX();
         float siteY = ofGetMouseY();
         sites.push_back(Site_2(siteX,siteY));
         vd.insert(sites.back());
         
+        // draw the diagram
         ofNoFill();
         ofBeginShape();
         for(auto v: outerTriangle){
@@ -95,6 +101,7 @@ void ofApp::draw(){
         for(int i = 0; i < current_points; i++){
             // Pick up Point
             Point_2 p(sites[i].x(), sites[i].y());
+            ofSetColor(253,231,37);
             ofDrawEllipse(p.x(), p.y(), 5, 5);
             
             // Get Voronoi locate result for p
@@ -121,6 +128,7 @@ void ofApp::draw(){
                         double vyt = ec->target()->point().y();
                         
                         // Draw
+                        ofSetColor(52,183,121);
                         ofDrawLine(ofPoint(vxs, vys), ofPoint(vxt, vyt));
                     }
                 }
