@@ -36,7 +36,7 @@ public:
     typedef VD::Ccb_halfedge_circulator Ccb_halfedge_circulator;
     
     
-    const int point_num = 100;
+    const int point_num = 200;
     VD vd;
     vector<Site_2> outerTriangle;
     vector<Site_2> sites;
