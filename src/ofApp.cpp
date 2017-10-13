@@ -30,7 +30,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofBackground(62,74,137);
+    ofBackground(0,0,0);
     ofNoFill();
     ofBeginShape();
     for(auto v: outerTriangle){
