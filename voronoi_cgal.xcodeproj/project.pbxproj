@@ -12,6 +12,7 @@
 		CC74C9211F913DFD00ABCA1F /* libCGAL.13.0.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CC74C91C1F913DFD00ABCA1F /* libCGAL.13.0.1.dylib */; };
 		CC74C9221F913DFD00ABCA1F /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CC74C91D1F913DFD00ABCA1F /* libgmp.10.dylib */; };
 		CC74C9231F913DFD00ABCA1F /* libmpfr.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CC74C91E1F913DFD00ABCA1F /* libmpfr.4.dylib */; };
+		CC866C831F9174E700D9409D /* weightedVoronoi_additive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC866C811F9174E700D9409D /* weightedVoronoi_additive.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
@@ -52,6 +53,8 @@
 		CC74C91C1F913DFD00ABCA1F /* libCGAL.13.0.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCGAL.13.0.1.dylib; path = ../../../../../../../../usr/local/Cellar/cgal/4.11/lib/libCGAL.13.0.1.dylib; sourceTree = "<group>"; };
 		CC74C91D1F913DFD00ABCA1F /* libgmp.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.10.dylib; path = ../../../../../../../../usr/local/Cellar/gmp/6.1.2/lib/libgmp.10.dylib; sourceTree = "<group>"; };
 		CC74C91E1F913DFD00ABCA1F /* libmpfr.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmpfr.4.dylib; path = ../../../../../../../../usr/local/Cellar/mpfr/3.1.6/lib/libmpfr.4.dylib; sourceTree = "<group>"; };
+		CC866C811F9174E700D9409D /* weightedVoronoi_additive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = weightedVoronoi_additive.cpp; sourceTree = "<group>"; };
+		CC866C821F9174E700D9409D /* weightedVoronoi_additive.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = weightedVoronoi_additive.hpp; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* voronoi_cgalDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voronoi_cgalDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
@@ -133,6 +136,8 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				CC866C811F9174E700D9409D /* weightedVoronoi_additive.cpp */,
+				CC866C821F9174E700D9409D /* weightedVoronoi_additive.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -233,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC866C831F9174E700D9409D /* weightedVoronoi_additive.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 			);
